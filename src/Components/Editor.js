@@ -8,7 +8,8 @@ export default function Editor(Props){
       <p>Editor</p>
      </div>
      
-     <textarea className="editor" value={Props.markdown} onChange= 
+     <textarea id="editor" className="editor" value={Props.markdown} 
+     onChange= 
     {(event) => { Props.handle(event.target.value)
      }}
        > 

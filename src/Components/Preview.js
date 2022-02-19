@@ -1,9 +1,20 @@
 import React from "react"
-let marked = require("marked");
+import {marked} from "marked"
 
 export default function Preview(Props){
-  
+
+    const getMarkdownText = () => {
+      marked.setOptions({
+      breaks: true
+    })
+    const rawMarkup = marked(Props.markdown, { sanitize: true   });
+    return { __html: rawMarkup };
+    };
+
+
   return (
-    <div className="preview"> </div>
+    <div className="preview" id="preview" dangerouslySetInnerHTML={ 
+    getMarkdownText()}
+    />
   )
 }
