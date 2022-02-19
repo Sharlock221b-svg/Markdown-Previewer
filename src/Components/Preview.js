@@ -1,10 +1,9 @@
 import React from "react"
+let marked = require("marked");
 
-export default function Preview(){
+export default function Preview(Props){
   
   return (
-    <div className="preview">
-     <h1></h1>
-    </div>
+    <div className="preview"> </div>
   )
 }
