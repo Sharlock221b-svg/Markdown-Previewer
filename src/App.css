@@ -1,3 +1,8 @@
+body{
+  margin: 0px;
+  background-color: #d4b8db;
+}
+
 .edi{
   margin: 0px;
   margin-top: 15px;
@@ -21,6 +26,7 @@
   border-bottom: none;
   margin-bottom: 0px;
   padding-bottom: 0px;
+  background-color: #FFEA9E;
 }
 
 div{
@@ -40,9 +46,10 @@ div{
   border: 5px solid black;
   height: 100%;
   padding-top: 0px;
-  margin-top: 15px;
   margin-left: 20px;
   padding: 10px;
+  padding-bottom: 0px;
+  background-color: #9EFFEA;
 }
 
 @media (max-width: 580px) {
@@ -61,3 +68,26 @@ div{
    width: 90%;
     margin: 2rem auto;
   }
+   
+.pre{
+ display: block;
+   border: 5px solid black;
+  border-bottom: none;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  margin-left: 20px;
+  margin-top: 15px;
+  background-color: #FFEA9E;
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  }
+
+p{
+  margin: 0px;
+}
+
+#editor{
+  background-color: #9EFFEA;
+}

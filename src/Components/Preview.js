@@ -13,8 +13,13 @@ export default function Preview(Props){
 
 
   return (
-    <div className="preview" id="preview" dangerouslySetInnerHTML={ 
+    <div  >
+    <div className="pre">
+      <p>Preview</p>
+     </div>
+    <div id="preview"  className="preview" dangerouslySetInnerHTML={ 
     getMarkdownText()}
     />
+    </div>
   )
 }
